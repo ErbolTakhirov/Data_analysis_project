@@ -9,10 +9,9 @@
 ## Структура проекта
 - `src/` — исходные скрипты анализа и визуализации  
 - `requirements.txt` — список необходимых библиотек для запуска проекта  
-- `README.md` — документация проекта  
+- `data` - для хранения данных
 
 ## Используемые данные
-Данные должны быть размещены в соответствующей папке (например, `data/`) или загружаться из внешних источников.  
 Формат данных — CSV или другой табличный формат.
 
 ## Основные этапы анализа
@@ -34,11 +33,20 @@
    pip install -r requirements.txt
    ```
 
-3. Запустите основной скрипт:
+3. Собрать данные:
    ```
-   python src/main.py
+   cd src 
+   python scraping.py   
    ```
-
+4. Анализ данных:
+   ```
+   python analysis.py
+   python processing.py
+   ```
+5. Визуализация:   (streamlit приложение)
+   ```
+   streamlit run visualisation.py
+   ```
 
 
 ## Используемые технологии
@@ -46,7 +54,15 @@
 - Python 3.7+  
 - pandas  
 - numpy  
-- matplotlib / seaborn  
+- matplotlib / seaborn
+- scikit-learn
+- wordcloud
+- beautifulsoup4
+- requests
+- textblob
+- plotly
+- streamlit
+- lxml
 
 ## Контакты
 
