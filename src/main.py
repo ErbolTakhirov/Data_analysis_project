@@ -91,5 +91,3 @@ def run_full_pipeline():
     except Exception as e:
         print(f"❌ Ошибка при анализе данных: {e}")
         return False
-
-    # 5.
